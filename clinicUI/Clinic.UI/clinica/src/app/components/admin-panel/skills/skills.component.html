@@ -1,0 +1,23 @@
+<app-dashboard></app-dashboard>
+
+<button class="btn btn-primary" (click)="Create()">Add</button>
+<br />
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of skills; track $index) {
+
+    <tr>
+      <td>{{ item.id }}</td>
+      <td>{{ item.name }}</td>
+      <td><button (click)="Delete(item.id)" class="btn btn-danger">Delete</button></td>
+      <td><button  class="btn btn-secondary" (click)="Update()">Update</button></td>
+    </tr>
+    }
+  </tbody>
+</table>

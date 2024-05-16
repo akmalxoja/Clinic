@@ -1,0 +1,15 @@
+<form>
+    <div class="mb-3">
+        <label for="name" class="form-label">Litsenzya</label>
+        <input type="text" name="name" class="form-control" id="name" [(ngModel)]="createModel.litsenzyaId">
+    </div>
+    <div class="mb-3">
+        <label for="dc" class="form-label">Doctor Id</label>
+        <input type="text" name="dc" class="form-control" id="dc" [(ngModel)]="createModel.doctorId">
+    </div>
+    <div class="input-group mb-3">
+        <input type="file" class="form-control" id="inputGroupFile02">
+        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="Create()">Submit</button>
+</form>   

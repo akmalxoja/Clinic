@@ -1,0 +1,44 @@
+.say2{
+
+    display: flex;
+}
+
+.qabul {
+    width: 250px;
+    height: 50px;
+    top: 26px;
+    left: 1710px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #EE1C1F
+}
+
+.qabul:hover {
+    background-color: #92dbff; /* Hover ҳолда фон рангини ўзгартириш */
+    color: white; /* Шрифт рангини озгартириш */
+    opacity: 1;
+     /* Опаситини ошириш */
+}
+
+
+ul li a {
+    color: black; /* Barcha linklar uchun odatiy rang */
+    text-decoration: none; /* Linklardagi pastki chiziqni olib tashlash */
+}
+
+ul li a:hover {
+    color: red; /* Surchda bo'lganda link rangi */
+}
+
+ul li a:active {
+    color: blue; /* Bosingan holda bo'lganda link rangi */
+}
+
+.im {
+    img{
+
+        width: 650px !important; /* Rasmning kengligi */
+        height: auto; /* Balandligi (avtomatik kengaytirish) */
+    }
+}

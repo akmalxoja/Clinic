@@ -1,0 +1,58 @@
+<app-navbar />
+<br><br><br><br>
+<div class="specialist">
+  <div class="minibar"><!--Mini Menu Bar-->
+    <app-mini-sidebar />
+  </div>
+
+  <div><!--Search-->
+    <p class="site-url">Главная / Специалисты</p>
+    <h1 class="main-header">Специалисты <br> клиники</h1>
+
+    <div class="options">
+      <div class="input-group flex-nowrap">
+        <img src="../../../../assets/images/search-icon.png" class="input-group-text" id="addon-wrapping">
+        <input type="text" class="form-control" placeholder="Username" aria-label="Найти врача"
+          aria-describedby="addon-wrapping">
+      </div>
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="../../../../assets/images/users-icon.png" class="dropdown-img" id="addon-wrapping">
+          <p class="droptown-text">Dropdown button</p>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-div"><!--Cards-->
+    <div class="above-cards">
+      @for (doctor of Doctors; track doctor.id) {
+        <app-card 
+        [picturePath]="doctor.picturePath"
+        [country]="doctor.address"
+        [fullname]="doctor.name"
+        [skill]="doctor.specialist.name"
+        [specialst]="doctor.serviceType.name"
+        [startWork]="'Стаж работы с '+doctor.startWork+' год'"
+        [description]="''"
+        />
+      }
+    </div>
+    <div>
+      
+      <app-duration-time 
+      [beforeTime]="'до'"
+      [time]="'40-60'"
+      [timeDescription]="'минут'"
+      [mainDescription]="'Время\nпроцедуры'"/>
+
+    </div>
+  </div>
+</div>
+<app-footer />

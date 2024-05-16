@@ -1,0 +1,19 @@
+<body>
+  <div class="wrapper">
+    <form action="#" [formGroup]="form" (ngSubmit)="login()">
+      <h2>Войти</h2>
+      <div class="input-field">
+        <input type="text" required formControlName="email" />
+        <label>E-mail адрес</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required formControlName="password" />
+        <label>Парол</label>
+      </div>
+      <button type="submit" >Войти</button>
+      <div class="register">
+        <p>Нету аккаунта? <a (click)="toRegister()">Зарегистрироваться</a></p>
+      </div>
+    </form>
+  </div>
+</body>

@@ -1,0 +1,27 @@
+<app-dashboard></app-dashboard>
+<br>
+<button class="btn btn-primary" routerLink="/dashboard/diplom/create">Add</button>
+
+<p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Id</th>
+            <th>Litsenzya</th>
+            <th>DoctorId</th>
+            <th>PicturePath</th>
+            <th>Action</th>
+            <th>Action1 </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+        <tr>
+            <td>{{ product.id }}</td>
+            <td>{{ product.litsenzyaId }}</td>
+            <td>{{ product.doctorId }}</td>
+            <td>{{ product.picturePath }}</td>
+            <td><button class="btn btn-danger" (click)="del(product.id)">Delete</button></td>
+            <td><button class="btn btn-primary" (click)="del(product.id)">Update</button></td>
+            <hr>
+        </tr>
+    </ng-template>
+</p-table>

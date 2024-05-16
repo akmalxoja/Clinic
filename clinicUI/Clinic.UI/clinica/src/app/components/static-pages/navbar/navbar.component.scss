@@ -1,0 +1,75 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    background: white;
+    z-index: 9;
+    box-shadow: 2px 2px 8px 2px rgb(194, 194, 194);
+}
+.container{
+    max-width: 1900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+*{
+    text-decoration: none;
+    list-style: none;
+}
+nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.link li >a{
+    font-family: TT Norms;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.7px;
+    text-align: left;
+    color: #000000;    
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin-left: 30px;
+}
+.logo_link >a{
+    font-family: TT Norms;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.7px;
+    color:  #000000;
+    
+}
+.logo_link>img{
+    max-width: 99px;
+    width: 100%;
+height: 29px;
+}
+.logo_link-all >a{
+    font-family: TT Norms;
+font-size: 15px;
+font-weight: 300;
+line-height: 17.7px;
+text-align: right;
+color:  red;
+}
+.logo_link-all >button{
+width: 180px;
+    height: 40px;
+    border: 1px solid #EE1C1F;
+    color:red;
+    
+}

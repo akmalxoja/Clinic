@@ -1,0 +1,135 @@
+<app-navbar></app-navbar>
+<br><br><br><br>
+<div class="top">
+    <div class="sideBar"><app-mini-sidebar></app-mini-sidebar></div>
+    <div>
+        <p class="url">Главная / Блог специалистов Expert Clinics</p>
+        <h1 class="main-header">Блог специалистов <br> Expert Clinics</h1>
+        <div class="inputs">
+            <div class="move input-group flex-nowrap">
+                <img src="../../../../assets/images/search-icon.png" class="input-group-text" id="addon-wrapping">
+                <input type="text" class="form-control" placeholder="Поиск в блоге" aria-label="Найти врача"
+                    aria-describedby="addon-wrapping">
+            </div>
+            <div class="move input-group flex-nowrap">
+                <img src="../../../../assets/images/date-icon.png" class="input-group-text" id="addon-wrapping">
+                <input type="date" class="form-control" placeholder="Выбрать дату" aria-label="Найти врача"
+                    aria-describedby="addon-wrapping">
+            </div>
+            <div class="move dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="../../../../assets/images/users-icon.png" class="dropdown-img" id="addon-wrapping">
+                    <p class="droptown-text">Dropdown button</p>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <button class="move goto-blog">Перейти в блог</button>
+        </div>
+
+
+
+
+        <div class="news">
+            <h1 class="main-header">Новости</h1>
+            <div class="inputs">
+                <div class="move input-group flex-nowrap">
+                    <img src="../../../../assets/images/search-icon.png" class="input-group-text" id="addon-wrapping">
+                    <input type="text" class="form-control" placeholder="Поиск статей и материалов"
+                        aria-label="Найти врача" aria-describedby="addon-wrapping">
+                </div>
+                <div class="move input-group flex-nowrap">
+                    <img src="../../../../assets/images/date-icon.png" class="input-group-text" id="addon-wrapping">
+                    <input type="date" class="form-control" placeholder="Выбрать дату" aria-label="Найти врача"
+                        aria-describedby="addon-wrapping">
+                </div>
+                <div class="move dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="../../../../assets/images/users-icon.png" class="dropdown-img" id="addon-wrapping">
+                        <p class="droptown-text">Dropdown button</p>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+                <button class="move goto-blog">Перейти в блог</button>
+            </div>
+        </div>
+
+
+        <div class="experts">
+            <h1 class="main-header">СМИ об Expert Clinics
+            </h1>
+            <div class="inputs">
+                <div class="move input-group flex-nowrap">
+                    <img src="../../../../assets/images/search-icon.png" class="input-group-text" id="addon-wrapping">
+                    <input type="text" class="form-control" placeholder="Поиск статей и материалов"
+                        aria-label="Найти врача" aria-describedby="addon-wrapping">
+                </div>
+                <div class="move input-group flex-nowrap">
+                    <img src="../../../../assets/images/date-icon.png" class="input-group-text" id="addon-wrapping">
+                    <input type="date" class="form-control" placeholder="Выбрать дату" aria-label="Найти врача"
+                        aria-describedby="addon-wrapping">
+                </div>
+                <div class="move dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="../../../../assets/images/users-icon.png" class="dropdown-img" id="addon-wrapping">
+                        <p class="droptown-text">Dropdown button</p>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+                <button class="move goto-blog">Перейти в блог</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+
+        <div>
+            <div class="topper">
+                <div class="main-card-1">
+                    <img class="face" src="../../../../assets/images/bashara.png" alt="">
+                    <h1 class="face-header">«Кольца Венеры»: как убрать морщины на шее?</h1>
+                    <div class="mini-description">
+                        <p class="fullname">Дорина Донич</p>
+                        <p class="date">10.02.20</p>
+                    </div>
+                </div>
+
+                <div class="main-card-2">
+                    <img class="naked" src="../../../../assets/images/shamelesss.png" alt="">
+                    <h1 class="face-header">Как убрать морщины вокруг губ?</h1>
+                    <div class="mini-description">
+                        <p class="fullname">Дорина Донич</p>
+                        <p class="date">10.02.20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="datas">
+            @for (doctor of Doctors; track doctor.id) {
+            <app-card  class="cardd" [picturePath]="doctor.picturePath" [country]="doctor.address" [fullname]="doctor.name"
+                [skill]="doctor.specialist.name" [specialst]="doctor.serviceType.name"
+                [startWork]="'Стаж работы с '+doctor.startWork+' год'" [description]="''" />
+            }
+        </div>
+    </div>
+    
+</div>
+<app-footer></app-footer>

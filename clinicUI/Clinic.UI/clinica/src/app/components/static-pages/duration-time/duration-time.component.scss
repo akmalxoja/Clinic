@@ -1,0 +1,50 @@
+
+
+.time-body{
+    display: flex;
+}
+
+.beforeTime{
+    font-size: 36px;
+    font-weight: 700;
+    color: red;
+    padding-top: 60px;
+}
+
+.time{
+    font-size: 96px;
+    font-weight: 700;
+    color: red;
+    padding-left: 15px;
+}
+
+.mainDescription{
+    font-size: 36px;
+    font-weight: 300;
+    color: gray;
+}
+
+.rectangle{
+    width: 20% ;
+    height: 200px;
+    border: 1px solid red;
+    position: relative;
+    right: 350px;
+    bottom: 25px;
+}
+
+.timeDescription{
+    font-size: 30px;
+    font-weight: 700;
+    color: red;
+    position: relative;
+    bottom: 60px;
+    left: 60px;
+}
+
+.description-div{
+    width: 100px;
+
+    margin-left: 50px;
+}
+

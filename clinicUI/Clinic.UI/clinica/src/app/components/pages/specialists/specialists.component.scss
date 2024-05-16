@@ -1,0 +1,69 @@
+.specialist {
+    display: flex;
+}
+
+.minibar {
+    width: 200px;
+}
+
+.main-header {
+    font-size: 44px;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+.site-url {
+    padding-top: 60px;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0px;
+}
+
+.input-group-text {
+    width: 65px;
+    height: 50px;
+    background-color: white;
+    border: white;
+}
+
+.dropdown-toggle {
+    display: flex;
+    width: 300px;
+    background-color: white;
+    color: gray;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0px;
+}
+
+.dropdown-toggle:hover {
+    background-color: rgb(216, 212, 212);
+    color: gray;
+}
+
+.dropdown-img {
+    width: 30px;
+    height: 30px;
+}
+
+.droptown-text {
+    padding-left: 35px;
+}
+
+.options {
+    margin-top: 30px;
+}
+
+.card-div {
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.above-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
